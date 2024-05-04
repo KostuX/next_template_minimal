@@ -1,3 +1,4 @@
+import { ThemeSwitch } from "../components/theme-switch";
 export const Foot = () => {
   return (
     <footer className="w-100wh bg-white rounded-lg shadow m-4 dark:bg-gray-800 ">
@@ -31,6 +32,7 @@ export const Foot = () => {
             </a>
           </li>
         </ul>
+        <ThemeSwitch />
       </div>
     </footer>
   );
