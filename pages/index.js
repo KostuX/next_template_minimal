@@ -1,17 +1,16 @@
-import { useTheme } from "next-themes";
-import { useEffect, useState } from "react";
+
 import { ThemeSwitch } from "../components/theme-switch";
+import DefaultLayout from "../layouts/default";
+
 export default function Home() {
-  const [mounted, setMounted] = useState(false);
-  const { theme, setTheme } = useTheme("light");
 
-  useEffect(() => {
-    setMounted(true);
-  }, []);
 
-  if (!mounted) return null;
+
+
+
   return (
-    <main className={` flex min-h-screen  items-center justify-between p-24`}>
+    <DefaultLayout >
+  
       <span className="inline-grid grid-cols-3 gap-4">
         <span>
           <ThemeSwitch />
@@ -30,6 +29,7 @@ export default function Home() {
         <span>05</span>
         <span>06</span>
       </span>
-    </main>
+  
+    </DefaultLayout>
   );
 }

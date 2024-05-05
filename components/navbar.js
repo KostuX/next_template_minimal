@@ -18,7 +18,7 @@ import {
 import { Link } from "@nextui-org/link";
 import NextLink from "next/link";
 
-export const Nav = () => {
+export const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
   return (
@@ -32,7 +32,7 @@ export const Nav = () => {
             ></NextLink>
           </NavbarBrand>
         </NavbarContent>
-        <ThemeSwitch />
+    
         <NavbarContent
           className="hidden sm:flex basis-1/5 sm:basis-full"
           justify="end"

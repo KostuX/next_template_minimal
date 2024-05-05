@@ -1,8 +1,7 @@
-import { Html, Head, Main, NextScript } from "next/document";
-import { Nav } from "../components/navbar";
-import { Foot } from "../components/footer";
-import { NextUIProvider } from "@nextui-org/react";
-import { Providers } from "../components/providers";
+import { Html,Head, Main, NextScript } from "next/document";
+
+
+
 export const viewport = {
   themeColor: [
     { media: "(prefers-color-scheme: light)", color: "white" },
@@ -12,20 +11,20 @@ export const viewport = {
 
 export default function Document() {
   return (
-    <NextUIProvider>
+    
       <Html lang="en">
-        <Head />
+       <Head/>
 
-        <body>
-          <Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
-            <Nav />
+        <body className="min-h-screen bg-background ">
+        
+     
             <Main />
-            <Foot />
-          </Providers>
+          
+            <NextScript />
         </body>
 
-        <NextScript />
+       
       </Html>
-    </NextUIProvider>
+   
   );
 }

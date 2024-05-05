@@ -27,9 +27,10 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
+    "**/*.js",
     "components/icons.js",
     ".next/types/**/*.ts"
-, "components/theme-switch.tsx"  ],
+, "components/theme-switch.tsxx"  ],
   "exclude": [
     "node_modules"
   ]
