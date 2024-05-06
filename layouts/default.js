@@ -8,14 +8,14 @@ export default function DefaultLayout({ children }) {
 
 
   return (
-   <> 
+   < div> 
 <Head/>
       <Navbar/>
-      <main >
+      <main  className=" h-screen" >
         {children}
       </main>
-      <Foot/>
-      </>
+      <Foot />
+      </div>
 
   );
 }

@@ -15,7 +15,7 @@ export default function Document() {
       <Html lang="en">
        <Head/>
 
-        <body className=" min-h-screen bg-background ">
+        <body className="h-screen bg-background ">
         
      
             <Main />
