@@ -11,7 +11,7 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head />
-      <body className="h-screen bg-background ">
+      <body className="h-screen bg-background text-foreground ">
         <Main />
         <NextScript />
       </body>
