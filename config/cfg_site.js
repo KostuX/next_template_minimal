@@ -14,7 +14,7 @@ export const cfg_site = {
     },
     {
       label: "About",
-      href: "#",
+      href: "/about",
     },
   ],
   navMenuItems: [

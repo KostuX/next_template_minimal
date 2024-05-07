@@ -1,9 +1,8 @@
-"use client";
 import React from "react";
 import { ThemeSwitch } from "../components/theme-switch";
 import { cfg_site as cfg } from "../config/cfg_site";
 import { Logo } from "../components/icons";
-import { Button } from "@nextui-org/react";
+import { useRouter } from "next/router";
 import {
   Navbar as NextUINavbar,
   NavbarContent,
@@ -17,6 +16,8 @@ import {
 import NextLink from "next/link";
 
 export const Navbar = () => {
+  const router = useRouter();
+
   return (
     <>
       {/** Logo | top left */}
