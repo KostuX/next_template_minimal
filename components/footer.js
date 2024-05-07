@@ -2,9 +2,13 @@ import { cfg_site } from "../config/cfg_site";
 import { Logo } from "./icons";
 export const Foot = () => {
   return (
-    <footer className="bg-background w-full mx-auto  p-4 md:flex sticky justify-between">
+    <footer className="bg-background w-full   p-4 text-sm text-gray-300  ">
+       <span className=" text-center grid grid-cols-3 gap-4  m-3 ">
+        <span> 
       <Logo />
-      <ul className="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
+      </span>
+      <span > 
+      <ul className="flex justify-center ">
         {cfg_site.footerLinks.map((e) => (
           <li key={e.label}>
             <a href={e.href}  className="hover:underline me-4 md:me-6">
@@ -13,12 +17,13 @@ export const Foot = () => {
           </li>
         ))}
       </ul>
-
-      <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
-        © {cfg_site.year}{" "}
+      </span>
+      <span   > 
+        © {cfg_site.year}
         <a href="#" className="hover:underline">
           {cfg_site.title}
         </a>
+      </span>
       </span>
     </footer>
   );
