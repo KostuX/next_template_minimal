@@ -6,8 +6,8 @@ export const Foot = () => {
       <Logo />
       <ul className="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
         {cfg_site.footerLinks.map((e) => (
-          <li>
-            <a href={e.href} className="hover:underline me-4 md:me-6">
+          <li key={e.label}>
+            <a href={e.href}  className="hover:underline me-4 md:me-6">
               {e.label}
             </a>
           </li>

@@ -40,6 +40,7 @@ export const Navbar = () => {
             <NextLink
               className="flex justify-start items-center m-1"
               href={e.href}
+              key={e.label}
             >
               {e.label}
             </NextLink>
