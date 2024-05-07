@@ -21,6 +21,7 @@ export const Foot = () => {
         <span>
           © {cfg_site.year}
           <a href="#" className="hover:underline">
+            {" "}
             {cfg_site.title}
           </a>
         </span>

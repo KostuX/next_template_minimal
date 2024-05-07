@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+import { cfg_site as cfg } from "./config/cfg_site";
 import { nextui } from "@nextui-org/react";
 export const content = [
   "./pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -11,4 +12,19 @@ export const theme = {
   extend: {},
 };
 export const darkMode = "class";
-export const plugins = [nextui()];
+export const plugins = [
+  nextui({
+    themes: {
+      dark: {
+        colors: {
+          theme_secondary: cfg.theme_secondary_dark,
+        },
+      },
+      light: {
+        colors: {
+          theme_secondary: cfg.theme_secondary_light,
+        },
+      },
+    },
+  }),
+];

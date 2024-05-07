@@ -3,7 +3,7 @@ import React from "react";
 import { ThemeSwitch } from "../components/theme-switch";
 import { cfg_site as cfg } from "../config/cfg_site";
 import { Logo } from "../components/icons";
-
+import { Button } from "@nextui-org/react";
 import {
   Navbar as NextUINavbar,
   NavbarContent,
@@ -40,13 +40,15 @@ export const Navbar = () => {
         {/** Links | center | large */}
         <NavbarContent className="hidden sm:flex" justify="center">
           {cfg.navItems.map((e) => (
-            <NextLink
-              className="flex justify-start items-center m-1"
-              href={e.href}
-              key={e.label}
-            >
-              {e.label}
-            </NextLink>
+            <NavbarItem key={e.label}>
+              <NextLink
+                className="flex justify-start items-center m-1 "
+                href={e.href}
+                key={e.label}
+              >
+                {e.label}
+              </NextLink>
+            </NavbarItem>
           ))}
         </NavbarContent>
 
