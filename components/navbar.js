@@ -20,8 +20,11 @@ export const Navbar = () => {
   return (
     <>
       {/** Logo | top left */}
-      <NextUINavbar maxWidth="xl">
-        <NavbarContent className="basis-1/5 sm:basis-full" justify="start">
+      <NextUINavbar
+        maxWidth="xl "
+        className="border-b border-black dark:border-white "
+      >
+        <NavbarContent className="basis-1/5 sm:basis-full " justify="start">
           <NavbarBrand as="li" className="gap-3 max-w-fit">
             <Logo />
             <NextLink

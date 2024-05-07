@@ -6,7 +6,7 @@ import { ThemeProvider as NextThemesProvider } from "next-themes";
 export default function MyApp({ Component, pageProps }) {
   return (
     <NextUIProvider>
-      <NextThemesProvider>
+      <NextThemesProvider attribute="class">
         <Component {...pageProps} />
       </NextThemesProvider>
     </NextUIProvider>
